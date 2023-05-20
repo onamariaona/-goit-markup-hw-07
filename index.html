@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <button class="menu-open-btn">
+        <button class="menu-open-btn" data-menu-open>
           <svg class="menu-open-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
@@ -60,58 +60,80 @@
           </ul>
         </address>
       </div>
-      <div class="mobal-menu">
+      <div class="mobal-menu" data-menu>
         <div class="mobal-menu-contener container">
-          <button class="menu-close-btn">
+          <button class="menu-close-btn" data-menu-close>
             <svg class="menu-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <ul class="mobail-nav-list">
+          <ul class="mobail-nav-list list">
             <li class="mobail-nav-item">
-              <a href="" class="mobail-nav-link"></a>
+              <a href="" class="mobail-nav-link current link">Studio</a>
             </li>
             <li class="mobail-nav-item">
-              <a href="" class="mobail-nav-link"></a>
+              <a href="" class="mobail-nav-link link">Portfolio</a>
             </li>
             <li class="mobail-nav-item">
-              <a href="" class="mobail-nav-link"></a>
+              <a href="" class="mobail-nav-link link">Contacts</a>
             </li>
           </ul>
-          <ul class="mobail-contact-list">
+          <ul class="mobail-contact-list list">
             <li class="mobail-contact-item">
-              <a href="" class="mobail-contact-link"></a>
+              <a href="tel:110001111111" class="mobail-tel-link link"
+                >+11 (000) 111-11-11</a
+              >
             </li>
             <li class="mobail-contact-item">
-              <a href="" class="mobail-contact-link"></a>
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobail-contact-link link"
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
-          <ul class="mobail-soc-list">
+          <ul class="mobail-soc-list list">
             <li class="mobail-soc-item">
               <a href="" class="mobail-soc-link">
                 <svg class="mobail-soc-icon">
-                  <use></use>
+                  <use
+                    href="./images/icons.svg#icon-instagram"
+                    width="24"
+                    height="24"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="mobail-soc-item">
               <a href="" class="mobail-soc-link">
                 <svg class="mobail-soc-icon">
-                  <use></use>
+                  <use
+                    href="./images/icons.svg#icon-twitter"
+                    width="24"
+                    height="24"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="mobail-soc-item">
               <a href="" class="mobail-soc-link">
                 <svg class="mobail-soc-icon">
-                  <use></use>
+                  <use
+                    href="./images/icons.svg#icon-facebook"
+                    width="24"
+                    height="24"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="mobail-soc-item">
               <a href="" class="mobail-soc-link">
                 <svg class="mobail-soc-icon">
-                  <use></use>
+                  <use
+                    href="./images/icons.svg#icon-linkedin"
+                    width="24"
+                    height="24"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -122,7 +144,7 @@
 
     <main>
       <!-- Section 1 -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-tittle">Effective Solutions for Your Business</h1>
 
@@ -130,7 +152,7 @@
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- Section 2 -->
       <!-- <section class="feature">
         <div class="container">
@@ -612,5 +634,6 @@
       </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobail-menu.js"></script>
   </body>
 </html>
